@@ -9,15 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{5F45882F-6872-402A-A8CA-DE4078B31F03}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Domain", "Core\YoutubeApi.Domain\YoutubeApi.Domain.csproj", "{6F8762C8-3F47-488E-8B55-72F6C6FC7232}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Domain", "Core\YoutubeApi.Domain\YoutubeApi.Domain.csproj", "{6F8762C8-3F47-488E-8B55-72F6C6FC7232}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Application", "Core\YoutubeApi.Application\YoutubeApi.Application.csproj", "{6C0D843F-542E-4949-8BE4-0FC80A9872F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Application", "Core\YoutubeApi.Application\YoutubeApi.Application.csproj", "{6C0D843F-542E-4949-8BE4-0FC80A9872F2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Infrastructure", "Infrastructure\YoutubeApi.Infrastructure\YoutubeApi.Infrastructure.csproj", "{F9A26338-3A69-46C3-BF1D-19A7C44564A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Infrastructure", "Infrastructure\YoutubeApi.Infrastructure\YoutubeApi.Infrastructure.csproj", "{F9A26338-3A69-46C3-BF1D-19A7C44564A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Persistence", "Infrastructure\YoutubeApi.Persistence\YoutubeApi.Persistence.csproj", "{256D16F1-BCDE-4E82-890F-014A670C3C74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Persistence", "Infrastructure\YoutubeApi.Persistence\YoutubeApi.Persistence.csproj", "{256D16F1-BCDE-4E82-890F-014A670C3C74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Api", "Presentation\YoutubeApi.Api\YoutubeApi.Api.csproj", "{436DD153-B96A-4DD5-9E38-FFFA15F73A20}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Api", "Presentation\YoutubeApi.Api\YoutubeApi.Api.csproj", "{436DD153-B96A-4DD5-9E38-FFFA15F73A20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Mapper", "YoutubeApi.Mapper\YoutubeApi.Mapper.csproj", "{0F3A4CC1-1C56-4C1D-8248-FFD9BB8466DB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{436DD153-B96A-4DD5-9E38-FFFA15F73A20}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{436DD153-B96A-4DD5-9E38-FFFA15F73A20}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{436DD153-B96A-4DD5-9E38-FFFA15F73A20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F3A4CC1-1C56-4C1D-8248-FFD9BB8466DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F3A4CC1-1C56-4C1D-8248-FFD9BB8466DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F3A4CC1-1C56-4C1D-8248-FFD9BB8466DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F3A4CC1-1C56-4C1D-8248-FFD9BB8466DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -55,6 +61,7 @@ Global
 		{F9A26338-3A69-46C3-BF1D-19A7C44564A2} = {9B77AA71-3578-45EF-830C-0F080A3D9593}
 		{256D16F1-BCDE-4E82-890F-014A670C3C74} = {9B77AA71-3578-45EF-830C-0F080A3D9593}
 		{436DD153-B96A-4DD5-9E38-FFFA15F73A20} = {5F45882F-6872-402A-A8CA-DE4078B31F03}
+		{0F3A4CC1-1C56-4C1D-8248-FFD9BB8466DB} = {DC2DF72C-59F3-4773-B7C9-15A76BDC3D0C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7A8698B5-54C4-4A98-9289-8229E3C1FCA8}
