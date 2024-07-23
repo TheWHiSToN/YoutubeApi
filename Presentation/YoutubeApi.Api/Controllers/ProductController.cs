@@ -18,7 +18,7 @@ namespace YoutubeApi.Api.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllProducts()
         {
-            var response = await mediator.Send(new GetAllProductsQueryRequest);
+            var response = await mediator.Send(new GetAllProductsQueryRequest());
             return Ok(response);
         }
     }
