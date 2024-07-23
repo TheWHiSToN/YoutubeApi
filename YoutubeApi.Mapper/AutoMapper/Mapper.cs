@@ -58,7 +58,7 @@ namespace YoutubeApi.Mapper.AutoMapper
 
             });
 
-            MapperContainer = (Application.Interfaces.AutoMapper.IMapper)config.CreateMapper();
+            MapperContainer = (IMapper)config.CreateMapper();
         }
     }
 }
