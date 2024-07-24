@@ -1,6 +1,7 @@
 using YoutubeApi.Persistence;
 using YoutubeApi.Application;
 using YoutubeApi.Mapper;
+using YoutubeApi.Application.Exceptions;
 
 
 
@@ -31,6 +32,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.ConfigureExceptionHandlingMiddleware();
 
 app.UseAuthorization();
 
