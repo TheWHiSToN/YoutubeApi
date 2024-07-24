@@ -7,7 +7,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using YoutubeApi.Application.Interfaces.AutoMapper;
-using AutoMapper.Internal;
+
 using IMapper = AutoMapper.IMapper;
 
 namespace YoutubeApi.Mapper.AutoMapper
@@ -58,7 +58,7 @@ namespace YoutubeApi.Mapper.AutoMapper
 
             });
 
-            MapperContainer = (Application.Interfaces.AutoMapper.IMapper)config.CreateMapper();
+            MapperContainer = (IMapper)config.CreateMapper();
         }
     }
 }

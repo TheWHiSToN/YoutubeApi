@@ -7,11 +7,11 @@ using YoutubeApi.Domain.Common;
 
 namespace YoutubeApi.Domain.Entities
 {
-    public class Category:EntityBase,IEntityBase
+    public class Category : EntityBase, IEntityBase
     {
         public Category()
         {
-            
+
         }
         public Category(int parentId, string name, int priorty)
         {
@@ -24,6 +24,6 @@ namespace YoutubeApi.Domain.Entities
         public string Name { get; set; }
         public int Priorty { get; set; }
         public ICollection<Detail> Details { get; set; }
-        public ICollection<Product> Products { get; set; }
+        public ICollection<ProductCategory> ProductCategories { get; set; }
     }
 }
