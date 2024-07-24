@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace YoutubeApi.Application.Exceptions
 {
-    public class ExceptionModel:ErrosStatusCode
+    public class ExceptionModel : ErrosStatusCode
     {
         public IEnumerable<string> Errors { get; set; }
 
@@ -19,4 +19,5 @@ namespace YoutubeApi.Application.Exceptions
     public class ErrosStatusCode
     {
         public int StatusCode { get; set; }
+    }
 }
