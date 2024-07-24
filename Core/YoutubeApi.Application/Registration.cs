@@ -3,9 +3,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using FluentValidation;
 using System.Text;
 using System.Threading.Tasks;
 using YoutubeApi.Application.Exceptions;
+using System.Globalization;
+using MediatR;
+using YoutubeApi.Application.Beheviors;
 
 namespace YoutubeApi.Application
 {
@@ -18,6 +22,11 @@ namespace YoutubeApi.Application
             services.AddTransient<ExceptionMiddleware>();
 
             services.AddMediatR(cfg=>cfg.RegisterServicesFromAssemblies(assembly));
+
+            services.AddValidatorsFromAssembly(assembly);
+            ValidatorOptions.Global.LanguageManager.Culture = new CultureInfo("tr");
+
+            services.AddTransient(typeof(IPipelineBehavior<,>), typeof(FluentValidationBehevior<,>));
         } 
     }
 }
