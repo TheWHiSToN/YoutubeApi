@@ -6,13 +6,13 @@ using System.Threading.Tasks;
 
 namespace YoutubeApi.Application.Bases
 {
-    public class BasesExceptions : ApplicationException
+    public class BaseException : ApplicationException
     {
-        public BasesExceptions()
+        public BaseException()
         {
             
         }
-        public BasesExceptions(string message) : base(message)
+        public BaseException(string message) : base(message)
         {
             
         }
