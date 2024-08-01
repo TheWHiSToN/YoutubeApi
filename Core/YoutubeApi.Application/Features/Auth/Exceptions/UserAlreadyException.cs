@@ -11,4 +11,7 @@ namespace YoutubeApi.Application.Features.Auth.Exceptions
     {
         public UserAlreadyException() : base("Böyle bir Kullanıcı zaten var!") {}
     }
+
+
+    
 }
