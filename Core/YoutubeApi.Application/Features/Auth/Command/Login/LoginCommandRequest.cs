@@ -12,6 +12,7 @@ namespace YoutubeApi.Application.Features.Auth.Command.Login
     {
         [DefaultValue("aliaktas12@gmail.com")]
         public string Email { get; set; }
+
         [DefaultValue("123456")]
         public string Password { get; set; }
     }
